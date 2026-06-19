@@ -3,16 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cutesy Cat 🖤</title>
+  <title>Zoomie 🖤 — Interactive Cat</title>
+  <meta name="description" content="An interactive Makoto Shinkai-inspired cat game featuring Zoomie, a cute animated cat with cherry blossoms and day/night ambiance."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div id="room">
     <canvas id="gameCanvas"></canvas>
   </div>
+
   <div id="ui">
     <span id="mood-label">curious</span>
   </div>
+
+  <div id="controls">
+    <button id="btn-daynight" title="Toggle Day / Night">🌙</button>
+    <button id="btn-sound"    title="Toggle Sound">🔇</button>
+  </div>
+
   <script src="game.js"></script>
 </body>
 </html>
